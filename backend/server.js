@@ -16,7 +16,7 @@ app.post('/save', (req, res) => {
     res.send({ message: 'Product saved successfully' });
   });
 
-app.get('https://e-shop-api-a6ok.onrender.com/list_products',(req,res)=>
+app.get('/list_products',(req,res)=>
 {
    // Select all products
 Product.find((error, products) => {
