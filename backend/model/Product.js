@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 
 // Se connecter à la base de données
-const mongoDB="mongodb://127.0.0.1:27017/Ecommerce";
+const mongoDB="mongodb+srv://admin:1LT1ZHFlNwrzaYBS@e-shop.4g6dkif.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(mongoDB)
 .then(() => console.log('Connexion à MongoDB réussie !'))
 .catch(() => console.log('Connexion à MongoDB échouée !'));;
