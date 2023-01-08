@@ -16,7 +16,7 @@ app.post('/save', (req, res) => {
     res.send({ message: 'Product saved successfully' });
   });
 
-app.get('/list_products',(req,res)=>
+app.get('https://e-shop-api-a6ok.onrender.com/list_products',(req,res)=>
 {
    // Select all products
 Product.find((error, products) => {
@@ -29,7 +29,7 @@ Product.find((error, products) => {
     res.json(products)
 })
 
-app.get('/product/:id', (req,res)=>{
+app.get('https://e-shop-api-a6ok.onrender.com/product/:id', (req,res)=>{
 
     const product= products.find((p)=> p._id== req.params.id)
     res.json(product)
